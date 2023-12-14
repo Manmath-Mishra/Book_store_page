@@ -1,0 +1,158 @@
+body{
+   
+    background-image:url("https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvb2tzdG9yZXxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    margin: 0;
+    /* padding-top: 10vh; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+#form_rev{
+    background-image: url('https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: contain;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(58, 11, 227);
+    font-weight: 800;
+}
+footer{padding-top: 10px;
+    justify-content:center; 
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    color: azure;
+    width: 100%;
+    background-color: black;
+    
+}
+footer p{
+    margin-left: 30px;
+}
+
+footer a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+#intro{
+    background-image: url('https://images.unsplash.com/photo-1623771702313-39dc4f71d275?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    backdrop-filter: blur(100px);
+}
+footer a:hover{
+    text-decoration: underline;
+}
+h2{
+    color:yellow;
+    font-family:'Times New Roman', Times, serif;
+}
+nav{
+    
+    top: 0;
+    background-color: rgb(215, 207, 207);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+.heading{
+    color: rgb(50, 50, 239);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+}
+.BestSellers{
+    color: azure;
+    text-align: center;
+    transition: 1s;
+}
+.BestSellers:active{
+    transform: rotate(360deg);
+    text-decoration: underline;
+    color: red;
+}
+#logo{
+    border-radius: 10px;
+    transition: 0.3s;
+    height:7vh;
+    width: 4vw;
+}
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+nav a:hover{
+    font-weight: bold;
+}
+#logo:hover{
+    border: 3px solid black;
+    transform: scale(1.1);
+}
+ul{
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    
+    
+}
+li{
+    padding: 2vh;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3vh;
+    
+}
+.card{
+    margin-left: 4vw;
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+#search_cont{
+    display: flex;
+    justify-content: center;
+}
+#search{
+    width: 50vw;
+    border-radius: 10px;
+    background-color: rgb(232, 230, 230);
+}
+
+
+@media screen and (max-width:1000px){
+    #intro{
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    #best_cards{
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    #Reviews{
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        margin-bottom: 2vh;
+    }
+    ul{
+        margin-left: 0;
+        flex-direction: column;       
+    }
+    nav{
+        width: 100%;
+        align-items: center;
+    }
+    
+    #logo{
+        margin: auto;
+        height:100%;
+        width: 10%;
+    }
+    footer{
+        flex-direction: column;
+    }
+
+}
