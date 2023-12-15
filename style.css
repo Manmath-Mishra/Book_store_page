@@ -4,22 +4,25 @@
 }
 
 body{
-   
-    background-image:url("https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvb2tzdG9yZXxlbnwwfHwwfHx8MA%3D%3D");
-    background-size: cover;
+   padding-top: 50px;
+    background-image:url("https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
     margin: 0;
     /* padding-top: 10vh; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
 }
+input{
+    background-color: azure;
+}
 #form_rev{
-    background-image: url('https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1535868463750-c78d9543614f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: contain;
     text-align: center;
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-    color: rgb(50, 5, 5);
+    color: rgb(255, 255, 255);
     font-weight: 800;
 }
 footer{padding-top: 10px;
@@ -42,21 +45,20 @@ footer a{
     color: white;
 }
 #intro{
-    background-image: url('https://images.unsplash.com/photo-1623771702313-39dc4f71d275?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    backdrop-filter: blur(100px);
+    background-image: url('https://images.unsplash.com/photo-1645199055511-7c9e27094e50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    
 }
 footer a:hover{
     text-decoration: underline;
 }
 h2{
-    color:yellow;
+    color: rgb(255, 255, 0);
     font-family:'Times New Roman', Times, serif;
 }
 nav{
-    
     top: 0;
-    background-color: rgb(215, 207, 207);
-    position: sticky;
+    background-color: rgba(215, 207, 207,0.7);
+    position: fixed;
     width: 100%;
     z-index: 1000;
     
@@ -68,14 +70,10 @@ nav{
     font-size: 120px;
 }
 .BestSellers{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
     color: azure;
     text-align: center;
-    transition: 1s;
-}
-.BestSellers:active{
-    transform: rotate(360deg);
-    text-decoration: underline;
-    color: red;
 }
 #logo{
     border-radius: 10px;
@@ -110,9 +108,18 @@ li{
 .card{
     margin-left: 4vw;
     transition: 0.4s;
+    
 }
 .card:hover{
     transform: scale(1.04);
+}
+#best_cards{
+    background-image: url('https://images.unsplash.com/photo-1516617442634-75371039cb3a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: contain;
+}
+#rec_cards{
+    background-image: url('https://images.unsplash.com/photo-1504470695779-75300268aa0e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: contain;
 }
 #search_cont{
     display: flex;
@@ -120,18 +127,31 @@ li{
 }
 #search{
     width: 50vw;
+    font-size: 22px;
     border-radius: 10px;
     background-color: rgb(232, 230, 230);
 }
 
 
 @media screen and (max-width:1000px){
+    body{
+        padding-top: 20vh;
+    }
     #intro{
         align-items: center;
         flex-direction: column;
         text-align: center;
     }
+    #search_cont{
+        align-items: center;
+        flex-direction: column;
+    }
     #best_cards{
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    #rec_cards{
         align-items: center;
         flex-direction: column;
     
@@ -144,7 +164,7 @@ li{
         margin-bottom: 2vh;
     }
     li{
-        padding: 1vh;
+        padding: 0.2vh;
     }
     ul{
         margin-left: 0;
@@ -154,6 +174,7 @@ li{
        
     }
     nav{
+        height: 20vh;
         width: 100%;
         align-items: center;
     }
@@ -165,6 +186,8 @@ li{
     }
     footer{
         flex-direction: column;
+        
+        
     }
 
 }
