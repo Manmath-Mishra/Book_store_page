@@ -1,3 +1,8 @@
+*{
+    overflow-x: hidden;
+
+}
+
 body{
    
     background-image:url("https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvb2tzdG9yZXxlbnwwfHwwfHx8MA%3D%3D");
@@ -14,7 +19,7 @@ body{
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-    color: rgb(58, 11, 227);
+    color: rgb(50, 5, 5);
     font-weight: 800;
 }
 footer{padding-top: 10px;
@@ -51,11 +56,12 @@ nav{
     
     top: 0;
     background-color: rgb(215, 207, 207);
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 1000;
     
 }
+
 .heading{
     color: rgb(50, 50, 239);
     font-family: 'Bebas Neue', sans-serif;
@@ -137,9 +143,15 @@ li{
     .card{
         margin-bottom: 2vh;
     }
+    li{
+        padding: 1vh;
+    }
     ul{
         margin-left: 0;
-        flex-direction: column;       
+        flex-direction: column; 
+        text-align: center;   
+        padding: 10px;
+       
     }
     nav{
         width: 100%;
